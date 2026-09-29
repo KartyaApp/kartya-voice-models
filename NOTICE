@@ -1,0 +1,21 @@
+kartya-voice-models
+Copyright 2026 Kartya
+
+Este repositório redistribui modelos de reconhecimento de voz de terceiros,
+sem modificação, sob a Apache License 2.0 (arquivo LICENSE).
+
+en-zipformer-2023-06-26-v1
+  Origem: https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26
+  Revisão: 672fbf1b30579d6585301139bb363f42a0ad4a24
+  Licença: Apache-2.0
+  Modelo original: https://huggingface.co/Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17
+  Código de treino: https://github.com/k2-fsa/icefall (k2-fsa, Apache-2.0)
+
+  Arquivos:
+    encoder.int8.onnx  = encoder-epoch-99-avg-1-chunk-16-left-128.int8.onnx
+    decoder.int8.onnx  = decoder-epoch-99-avg-1-chunk-16-left-128.int8.onnx
+    joiner.int8.onnx   = joiner-epoch-99-avg-1-chunk-16-left-128.int8.onnx
+    tokens.txt         = tokens.txt
+    bpe.vocab          gerado do bpe.model da mesma revisão, pela receita de
+                       scripts/export_bpe_vocab.py do sherpa-onnx
+                       (https://github.com/k2-fsa/sherpa-onnx)
